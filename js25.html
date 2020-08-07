@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript 25</title>
+<script type="text/javascript">
+function divcreate()
+{
+	document.getElementById("box").style.width=document.getElementById("width").value+"px";
+	document.getElementById("box").style.height=document.getElementById("height").value+"px";
+	document.getElementById("box").style.borderWidth=document.getElementById("borthick").value;
+	document.getElementById("box").style.borderStyle=document.getElementById("bortyp").value;
+	document.getElementById("box").style.borderColor=document.getElementById("borcol").value;
+	document.getElementById("box").style.backgroundColor=document.getElementById("backcol").value;
+	document.getElementById("box").style.borderRadius=document.getElementById("roundnes").value;
+}
+</script>
+</head>
+<body>
+<form action="" method="get">
+<table>
+  <tr>
+    <td width="200" height="30">width</td>
+    <td width="300"><input id="width" name="" type="text" /></td>
+  </tr>
+  <tr>
+    <td height="30">height</td>
+    <td><input id="height" name="" type="text" /></td>
+  </tr>
+  <tr>
+    <td height="30">border thickness</td>
+    <td><select id="borthick" name="">
+      <option>choose a line thickness</option>
+      <option value="1px">1px</option>
+      <option value="2px">2px</option>
+      <option value="3px">3px</option>
+      <option value="4px">4px</option>
+      <option value="5px">5px</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td height="30">border type</td>
+    <td><select id="bortyp" name="">
+      <option>choose a border type</option>
+      <option value="solid">solid</option>
+      <option value="dashed">dashed</option>
+      <option value="dotted">dotted</option>
+      <option value="double">double</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td height="30">border color</td>
+    <td><select id="borcol" name="">
+      <option>choose a color</option>
+      <option value="#f00">Kırmızı</option>
+      <option value="#00f">Mavi</option>
+      <option value="#0f0">Yeşil</option>
+      <option value="#000">Siyah</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td height="30">background color</td>
+    <td><select id="backcol" name="">
+    <option>choose a color</option>
+      <option value="#f00">red</option>
+      <option value="#00f">blue</option>
+      <option value="#0f0">green</option>
+      <option value="#000">black</option>
+    
+    </select></td>
+  </tr>
+  <tr>
+    <td height="30">roundness</td>
+    <td><select id="roundnes" name="">
+      <option>amound of roundness</option>
+      <option value="3px">3px</option>
+      <option value="5px">5px</option>
+      <option value="10px">10px</option>
+      <option value="15px">15px</option>
+      &nbsp;</select></td>
+  </tr>
+  <tr>
+    <td height="30">&nbsp;</td>
+    <td><input name="" type="button" value="create" onclick="divcreate()" /></td>
+  </tr>
+</table>
+</form>
+<br/><br/><br/>
+<div id="box"></div>
+
+</body>
+</html>
